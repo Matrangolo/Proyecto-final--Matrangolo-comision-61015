@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "nombre": "Camiseta Principal",
+      "precio": 29000,
+      "imagen": "dallasLocal.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Camiseta Secundaria",
+      "precio": 29000,
+      "imagen": "dallasVisitante.webp"
+    },
+    {
+      "id": 3,
+      "nombre": "Camiseta Alternativa",
+      "precio": 35000,
+      "imagen": "dallasAlternativa.webp"
+    }
+  ]
+  

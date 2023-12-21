@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="tituloTienda text-center">
+            🛒 Tienda Online de Los Hornos FC ⚽
+        </h1>
+        <div class="row container">
+            <!-- Producto 1 -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <img src="dallasLocal.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Camiseta Principal</h3>
+                        <p class="card-text">$29000</p>
+                        <button id="add-product-1" class="btn btn-primary btn-block">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <img src="dallasVisitante.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Camiseta Secundaria</h3>
+                        <p class="card-text">$29000</p>
+                        <button id="add-product-2" class="btn btn-primary btn-block">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <img src="dallasAlternativa.webp" class="card-img-top" alt="Producto 3">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Camiseta Alternativa</h3>
+                        <p class="card-text">$35000</p>
+                        <button id="add-product-3" class="btn btn-primary btn-block">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- boton para ver carrito -->
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-warning mb-3" id="toggle-cart">Ver compras</button>
+        </div>
+
+        <!-- carrito de compras oculto -->
+        <div id="carrito-container" class="d-none justify-content-center align-items-center vh-100">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="card text-white bg-primary" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Carrito de Compras</h2>
+                        <ul id="carrito-compras" class="list-group mb-3"></ul>
+                        <p class="card-text">Total: $<span id="totalDeCompra">0</span></p>
+                        <button id="checkout" class="btn btn-success">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="funciones.js"></script>
+</body>
+</html>
